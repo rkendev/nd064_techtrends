@@ -1,0 +1,1 @@
+kubectl create ns sandbox --dry-run=client -o yaml > namespce.yaml
