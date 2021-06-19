@@ -13,6 +13,7 @@ spec:
       valueFiles:
       - values-staging.yaml
     path: helm
+    #test comment
     repoURL: https://github.com/rkendev/nd064_techtrends/
     targetRevision: HEAD
   # Sync policy
