@@ -5,57 +5,125 @@ docker build -t techtrends .
 ## Docker commands used to run the application
 # TODO: insert the docker run command
 docker run -d -p 7111:3111 techtrends
-961b99b0f2ed600478bd628d0171d14f67ed24147501555a5c0bf032c1f333f4
+909d24283d3e436d906e55f38c73ab350d9773fee80eac5b07cd2c1f8879bacbf
 
 ## Docker commands used to get the application logs
 # TODO: insert the docker logs command
- docker logs --follow 961b99b0f2ed600478bd628d0171d14f67ed24147501555a5c0bf032c1f333f4
+ docker logs --follow 09d24283d3e436d906e55f38c73ab350d9773fee80eac5b07cd2c1f8879bacbf
 
 ## Logs from the container running the TechTrends application
-# TODO: paste logs from the Docker container 
  * Serving Flask app "app" (lazy loading)
  * Environment: production
    WARNING: This is a development server. Do not use it in a production deployment.
    Use a production WSGI server instead.
  * Debug mode: off
-INFO:werkzeug: * Running on http://0.0.0.0:3111/ (Press CTRL+C to quit)
-INFO:app:10/06/2021, 18:40:10 From @app.route('/'): All artices displayed!
-INFO:werkzeug:172.17.0.1 - - [10/Jun/2021 18:40:10] "GET / HTTP/1.1" 200 -
-INFO:app:10/06/2021, 18:40:16 From @app.route('/<int:post_id>'): Artice 2020 CNCF Annual Report retrieved!
-INFO:werkzeug:172.17.0.1 - - [10/Jun/2021 18:40:16] "GET /1 HTTP/1.1" 200 -
-INFO:app:10/06/2021, 18:40:19 From @app.route('/<int:post_id>'): Artice KubeCon + CloudNativeCon 2021 retrieved!
-INFO:werkzeug:172.17.0.1 - - [10/Jun/2021 18:40:19] "GET /2 HTTP/1.1" 200 -
-INFO:app:10/06/2021, 18:40:24 From @app.route('/<int:post_id>'): Artice CNCF Cloud Native Interactive Landscape retrieved!
-INFO:werkzeug:172.17.0.1 - - [10/Jun/2021 18:40:24] "GET /4 HTTP/1.1" 200 -
-ERROR:app:10/06/2021, 18:40:30 From @app.route('/<int:post_id>'): Artice with id: 7 cannot be retrieved!
-INFO:werkzeug:172.17.0.1 - - [10/Jun/2021 18:40:30] "GET /7 HTTP/1.1" 404 -
-INFO:app:10/06/2021, 18:40:35 From @app.route('/<int:post_id>'): Artice Kubernetes Certification retrieved!
-INFO:werkzeug:172.17.0.1 - - [10/Jun/2021 18:40:35] "GET /6 HTTP/1.1" 200 -
-INFO:app:10/06/2021, 18:40:40 From @app.route('/<int:post_id>'): Artice CNCF Cloud Native Definition v1.0 retrieved!
-INFO:werkzeug:172.17.0.1 - - [10/Jun/2021 18:40:40] "GET /5 HTTP/1.1" 200 -
-INFO:app:10/06/2021, 18:40:45 From @app.route('/<int:post_id>'): Artice CNCF Cloud Native Interactive Landscape retrieved!
-INFO:werkzeug:172.17.0.1 - - [10/Jun/2021 18:40:45] "GET /4 HTTP/1.1" 200 -
-ERROR:app:10/06/2021, 18:40:48 From @app.route('/<int:post_id>'): Artice with id: 10 cannot be retrieved!
-INFO:werkzeug:172.17.0.1 - - [10/Jun/2021 18:40:48] "GET /10 HTTP/1.1" 404 -
-ERROR:app:10/06/2021, 18:40:51 From @app.route('/<int:post_id>'): Artice with id: 1000 cannot be retrieved!
-INFO:werkzeug:172.17.0.1 - - [10/Jun/2021 18:40:51] "GET /1000 HTTP/1.1" 404 -
-INFO:app:10/06/2021, 18:41:00 From @app.route('/about'): About Us retrieved!
-INFO:werkzeug:172.17.0.1 - - [10/Jun/2021 18:41:00] "GET /about HTTP/1.1" 200 -
-INFO:werkzeug:172.17.0.1 - - [10/Jun/2021 18:41:03] "GET /create HTTP/1.1" 200 -
-INFO:app:10/06/2021, 18:41:15 From @app.route('/create', methods=('GET', 'POST')): Article with title Test added to database
-INFO:werkzeug:172.17.0.1 - - [10/Jun/2021 18:41:15] "POST /create HTTP/1.1" 302 -
-INFO:app:10/06/2021, 18:41:15 From @app.route('/'): All artices displayed!
-INFO:werkzeug:172.17.0.1 - - [10/Jun/2021 18:41:15] "GET / HTTP/1.1" 200 -
-INFO:app:10/06/2021, 18:41:21 From @app.route('/<int:post_id>'): Artice Test retrieved!
-INFO:werkzeug:172.17.0.1 - - [10/Jun/2021 18:41:21] "GET /7 HTTP/1.1" 200 -
-INFO:app:10/06/2021, 18:41:26 From @app.route('/<int:post_id>'): Artice Test retrieved!
-INFO:werkzeug:172.17.0.1 - - [10/Jun/2021 18:41:26] "GET /7 HTTP/1.1" 200 -
-INFO:werkzeug:172.17.0.1 - - [10/Jun/2021 18:42:05] "GET /create?title=test2&content=test%20text2 HTTP/1.1" 200 -
-INFO:app:10/06/2021, 18:42:19 From @app.route('/create', methods=('GET', 'POST')): Article with title Dummy products added to database
-INFO:werkzeug:172.17.0.1 - - [10/Jun/2021 18:42:19] "POST /create?title=test2&content=test%20text2 HTTP/1.1" 302 -
-INFO:app:10/06/2021, 18:42:19 From @app.route('/'): All artices displayed!
-INFO:werkzeug:172.17.0.1 - - [10/Jun/2021 18:42:19] "GET / HTTP/1.1" 200 -
-INFO:app:10/06/2021, 18:42:25 From @app.route('/<int:post_id>'): Artice Dummy products retrieved!
-INFO:werkzeug:172.17.0.1 - - [10/Jun/2021 18:42:25] "GET /8 HTTP/1.1" 200 -
-INFO:werkzeug:172.17.0.1 - - [10/Jun/2021 18:45:39] "GET /metrics HTTP/1.1" 200 -
-INFO:werkzeug:172.17.0.1 - - [10/Jun/2021 18:45:51] "GET /healthz HTTP/1.1" 200 -
+2021-06-20 20:13:22,096 INFO werkzeug MainThread :  * Running on http://0.0.0.0:3111/ (Press CTRL+C to quit)
+2021-06-20 20:14:35,643 INFO app Thread-1 : From @app.route('/'): All artices displayed!
+2021-06-20 20:14:35,851 INFO werkzeug Thread-1 : 172.17.0.1 - - [20/Jun/2021 20:14:35] "GET / HTTP/1.1" 200 -
+2021-06-20 20:14:36,213 INFO werkzeug Thread-2 : 172.17.0.1 - - [20/Jun/2021 20:14:36] "GET /static/css/main.css HTTP/1.1" 200 -
+2021-06-20 20:14:42,939 INFO app Thread-3 : From @app.route('/<int:post_id>'): Artice 2020 CNCF Annual Report retrieved!
+2021-06-20 20:14:42,945 INFO werkzeug Thread-3 : 172.17.0.1 - - [20/Jun/2021 20:14:42] "GET /1 HTTP/1.1" 200 -
+2021-06-20 20:14:47,886 INFO app Thread-5 : From @app.route('/<int:post_id>'): Artice KubeCon + CloudNativeCon 2021 retrieved!
+2021-06-20 20:14:47,887 INFO werkzeug Thread-5 : 172.17.0.1 - - [20/Jun/2021 20:14:47] "GET /2 HTTP/1.1" 200 -
+2021-06-20 20:14:51,680 INFO app Thread-7 : From @app.route('/<int:post_id>'): Artice Kubernetes v1.20 Release Notes retrieved!
+2021-06-20 20:14:51,682 INFO werkzeug Thread-7 : 172.17.0.1 - - [20/Jun/2021 20:14:51] "GET /3 HTTP/1.1" 200 -
+2021-06-20 20:14:55,672 INFO app Thread-8 : From @app.route('/<int:post_id>'): Artice CNCF Cloud Native Interactive Landscape retrieved!
+2021-06-20 20:14:55,673 INFO werkzeug Thread-8 : 172.17.0.1 - - [20/Jun/2021 20:14:55] "GET /4 HTTP/1.1" 200 -
+2021-06-20 20:15:06,599 ERROR app Thread-10 : From @app.route('/<int:post_id>'): Artice with id: 7 cannot be retrieved!
+2021-06-20 20:15:06,605 INFO werkzeug Thread-10 : 172.17.0.1 - - [20/Jun/2021 20:15:06] "GET /7 HTTP/1.1" 404 -
+2021-06-20 20:15:25,574 ERROR app Thread-11 : From @app.route('/<int:post_id>'): Artice with id: 700 cannot be retrieved!
+2021-06-20 20:15:25,575 INFO werkzeug Thread-11 : 172.17.0.1 - - [20/Jun/2021 20:15:25] "GET /700 HTTP/1.1" 404 -
+2021-06-20 20:15:41,527 ERROR app Thread-12 : From @app.route('/<int:post_id>'): Artice with id: 703 cannot be retrieved!
+2021-06-20 20:15:41,529 INFO werkzeug Thread-12 : 172.17.0.1 - - [20/Jun/2021 20:15:41] "GET /703 HTTP/1.1" 404 -
+2021-06-20 20:15:52,784 INFO app Thread-13 : From @app.route('/'): All artices displayed!
+2021-06-20 20:15:52,787 INFO werkzeug Thread-13 : 172.17.0.1 - - [20/Jun/2021 20:15:52] "GET / HTTP/1.1" 200 -
+2021-06-20 20:16:04,411 INFO app Thread-15 : About page successfully retrieved!
+2021-06-20 20:16:04,417 INFO werkzeug Thread-15 : 172.17.0.1 - - [20/Jun/2021 20:16:04] "GET /about HTTP/1.1" 200 -
+2021-06-20 20:16:20,131 INFO werkzeug Thread-17 : 172.17.0.1 - - [20/Jun/2021 20:16:20] "GET /metrics HTTP/1.1" 200 -
+2021-06-20 20:16:41,449 INFO app Thread-19 : Health check successful
+2021-06-20 20:16:41,449 INFO werkzeug Thread-19 : 172.17.0.1 - - [20/Jun/2021 20:16:41] "GET /healthz HTTP/1.1" 200 -
+2021-06-20 20:16:48,968 INFO werkzeug Thread-20 : 172.17.0.1 - - [20/Jun/2021 20:16:48] "GET /create HTTP/1.1" 200 -
+2021-06-20 20:17:01,131 INFO app Thread-22 :  From @app.route('/create', methods=('GET', 'POST')): Article with title test added to database
+2021-06-20 20:17:01,132 INFO werkzeug Thread-22 : 172.17.0.1 - - [20/Jun/2021 20:17:01] "POST /create HTTP/1.1" 302 -
+2021-06-20 20:17:01,163 INFO app Thread-23 : From @app.route('/'): All artices displayed!
+2021-06-20 20:17:01,165 INFO werkzeug Thread-23 : 172.17.0.1 - - [20/Jun/2021 20:17:01] "GET / HTTP/1.1" 200 -
+2021-06-20 20:17:11,303 INFO app Thread-24 : From @app.route('/<int:post_id>'): Artice test retrieved!
+2021-06-20 20:17:11,305 INFO werkzeug Thread-24 : 172.17.0.1 - - [20/Jun/2021 20:17:11] "GET /7 HTTP/1.1" 200 -
+2021-06-20 20:17:24,086 ERROR app Thread-27 : From @app.route('/<int:post_id>'): Artice with id: 75 cannot be retrieved!
+2021-06-20 20:17:24,087 INFO werkzeug Thread-27 : 172.17.0.1 - - [20/Jun/2021 20:17:24] "GET /75 HTTP/1.1" 404 -
+2021-06-20 20:17:29,660 INFO app Thread-28 : From @app.route('/'): All artices displayed!
+2021-06-20 20:17:29,662 INFO werkzeug Thread-28 : 172.17.0.1 - - [20/Jun/2021 20:17:29] "GET / HTTP/1.1" 200 -
+2021-06-20 20:18:07,521 INFO app Thread-31 : About page successfully retrieved!
+2021-06-20 20:18:07,522 INFO werkzeug Thread-31 : 172.17.0.1 - - [20/Jun/2021 20:18:07] "GET /about HTTP/1.1" 200 -
+2021-06-20 20:18:09,840 INFO werkzeug Thread-32 : 172.17.0.1 - - [20/Jun/2021 20:18:09] "GET /create HTTP/1.1" 200 -
+2021-06-20 20:18:17,317 INFO app Thread-34 :  From @app.route('/create', methods=('GET', 'POST')): Article with title nmmj added to database
+2021-06-20 20:18:17,320 INFO werkzeug Thread-34 : 172.17.0.1 - - [20/Jun/2021 20:18:17] "POST /create HTTP/1.1" 302 -
+2021-06-20 20:18:17,343 INFO app Thread-35 : From @app.route('/'): All artices displayed!
+2021-06-20 20:18:17,345 INFO werkzeug Thread-35 : 172.17.0.1 - - [20/Jun/2021 20:18:17] "GET / HTTP/1.1" 200 -
+2021-06-20 20:18:31,017 INFO app Thread-36 : From @app.route('/<int:post_id>'): Artice nmmj retrieved!
+2021-06-20 20:18:31,019 INFO werkzeug Thread-36 : 172.17.0.1 - - [20/Jun/2021 20:18:31] "GET /8 HTTP/1.1" 200 -
+2021-06-20 20:18:54,537 ERROR app Thread-37 : From @app.route('/<int:post_id>'): Artice with id: 2856 cannot be retrieved!
+2021-06-20 20:18:54,538 INFO werkzeug Thread-37 : 172.17.0.1 - - [20/Jun/2021 20:18:54] "GET /2856 HTTP/1.1" 404 -
+2021-06-20 20:19:50,361 INFO app Thread-38 : From @app.route('/<int:post_id>'): Artice nmmj retrieved!
+2021-06-20 20:19:50,362 INFO werkzeug Thread-38 : 172.17.0.1 - - [20/Jun/2021 20:19:50] "GET /8 HTTP/1.1" 200 -
+2021-06-20 20:19:55,628 INFO app Thread-39 : From @app.route('/<int:post_id>'): Artice Kubernetes Certification retrieved!
+2021-06-20 20:19:55,629 INFO werkzeug Thread-39 : 172.17.0.1 - - [20/Jun/2021 20:19:55] "GET /6 HTTP/1.1" 200 -
+2021-06-20 20:20:05,867 INFO app Thread-41 : About page successfully retrieved!
+2021-06-20 20:20:05,869 INFO werkzeug Thread-41 : 172.17.0.1 - - [20/Jun/2021 20:20:05] "GET /about HTTP/1.1" 200 -
+2021-06-20 20:20:07,737 INFO werkzeug Thread-42 : 172.17.0.1 - - [20/Jun/2021 20:20:07] "GET /create HTTP/1.1" 200 -
+2021-06-20 20:20:10,598 ERROR app Thread-43 :  From @app.route('/create', methods=('GET', 'POST')): No title specified for new article!
+2021-06-20 20:20:10,600 INFO werkzeug Thread-43 : 172.17.0.1 - - [20/Jun/2021 20:20:10] "POST /create HTTP/1.1" 200 -
+2021-06-20 20:20:15,063 ERROR app Thread-44 :  From @app.route('/create', methods=('GET', 'POST')): No title specified for new article!
+2021-06-20 20:20:15,065 INFO werkzeug Thread-44 : 172.17.0.1 - - [20/Jun/2021 20:20:15] "POST /create HTTP/1.1" 200 -
+2021-06-20 20:20:15,979 ERROR app Thread-45 :  From @app.route('/create', methods=('GET', 'POST')): No title specified for new article!
+2021-06-20 20:20:15,981 INFO werkzeug Thread-45 : 172.17.0.1 - - [20/Jun/2021 20:20:15] "POST /create HTTP/1.1" 200 -
+2021-06-20 20:20:24,188 INFO app Thread-46 :  From @app.route('/create', methods=('GET', 'POST')): Article with title hbn added to database
+2021-06-20 20:20:24,191 INFO werkzeug Thread-46 : 172.17.0.1 - - [20/Jun/2021 20:20:24] "POST /create HTTP/1.1" 302 -
+2021-06-20 20:20:24,209 INFO app Thread-47 : From @app.route('/'): All artices displayed!
+2021-06-20 20:20:24,212 INFO werkzeug Thread-47 : 172.17.0.1 - - [20/Jun/2021 20:20:24] "GET / HTTP/1.1" 200 -
+2021-06-20 20:20:29,835 INFO app Thread-48 : From @app.route('/<int:post_id>'): Artice hbn retrieved!
+2021-06-20 20:20:29,836 INFO werkzeug Thread-48 : 172.17.0.1 - - [20/Jun/2021 20:20:29] "GET /9 HTTP/1.1" 200 -
+2021-06-20 20:20:38,835 INFO app Thread-50 : From @app.route('/<int:post_id>'): Artice KubeCon + CloudNativeCon 2021 retrieved!
+2021-06-20 20:20:38,836 INFO werkzeug Thread-50 : 172.17.0.1 - - [20/Jun/2021 20:20:38] "GET /2 HTTP/1.1" 200 -
+2021-06-20 20:21:00,888 INFO app Thread-53 : From @app.route('/<int:post_id>'): Artice Kubernetes v1.20 Release Notes retrieved!
+2021-06-20 20:21:00,890 INFO werkzeug Thread-53 : 172.17.0.1 - - [20/Jun/2021 20:21:00] "GET /3 HTTP/1.1" 200 -
+2021-06-20 20:21:07,124 INFO werkzeug Thread-54 : 172.17.0.1 - - [20/Jun/2021 20:21:07] "GET /create HTTP/1.1" 200 -
+2021-06-20 20:21:09,412 ERROR app Thread-55 :  From @app.route('/create', methods=('GET', 'POST')): No title specified for new article!
+2021-06-20 20:21:09,414 INFO werkzeug Thread-55 : 172.17.0.1 - - [20/Jun/2021 20:21:09] "POST /create HTTP/1.1" 200 -
+2021-06-20 20:21:10,178 ERROR app Thread-56 :  From @app.route('/create', methods=('GET', 'POST')): No title specified for new article!
+2021-06-20 20:21:10,179 INFO werkzeug Thread-56 : 172.17.0.1 - - [20/Jun/2021 20:21:10] "POST /create HTTP/1.1" 200 -
+2021-06-20 20:21:10,755 ERROR app Thread-57 :  From @app.route('/create', methods=('GET', 'POST')): No title specified for new article!
+2021-06-20 20:21:10,756 INFO werkzeug Thread-57 : 172.17.0.1 - - [20/Jun/2021 20:21:10] "POST /create HTTP/1.1" 200 -
+2021-06-20 20:22:13,855 INFO app Thread-58 :  From @app.route('/create', methods=('GET', 'POST')): Article with title hhjj added to database
+2021-06-20 20:22:13,857 INFO werkzeug Thread-58 : 172.17.0.1 - - [20/Jun/2021 20:22:13] "POST /create HTTP/1.1" 302 -
+2021-06-20 20:22:13,870 INFO app Thread-59 : From @app.route('/'): All artices displayed!
+2021-06-20 20:22:13,872 INFO werkzeug Thread-59 : 172.17.0.1 - - [20/Jun/2021 20:22:13] "GET / HTTP/1.1" 200 -
+2021-06-20 20:22:16,975 INFO app Thread-61 : About page successfully retrieved!
+2021-06-20 20:22:16,977 INFO werkzeug Thread-61 : 172.17.0.1 - - [20/Jun/2021 20:22:16] "GET /about HTTP/1.1" 200 -
+2021-06-20 20:22:27,139 INFO app Thread-63 : Health check successful
+2021-06-20 20:22:27,140 INFO werkzeug Thread-63 : 172.17.0.1 - - [20/Jun/2021 20:22:27] "GET /healthz HTTP/1.1" 200 -
+2021-06-20 20:22:33,766 INFO werkzeug Thread-64 : 172.17.0.1 - - [20/Jun/2021 20:22:33] "GET /metrics HTTP/1.1" 200 -
+2021-06-20 20:22:46,978 INFO app Thread-66 : From @app.route('/'): All artices displayed!
+2021-06-20 20:22:46,981 INFO werkzeug Thread-66 : 172.17.0.1 - - [20/Jun/2021 20:22:46] "GET / HTTP/1.1" 200 -
+2021-06-20 20:22:54,878 INFO app Thread-68 : From @app.route('/<int:post_id>'): Artice hhjj retrieved!
+2021-06-20 20:22:54,880 INFO werkzeug Thread-68 : 172.17.0.1 - - [20/Jun/2021 20:22:54] "GET /10 HTTP/1.1" 200 -
+2021-06-20 20:23:09,631 INFO werkzeug Thread-70 : 172.17.0.1 - - [20/Jun/2021 20:23:09] "GET /create HTTP/1.1" 200 -
+2021-06-20 20:23:16,561 INFO app Thread-71 :  From @app.route('/create', methods=('GET', 'POST')): Article with title bhh added to database
+2021-06-20 20:23:16,563 INFO werkzeug Thread-71 : 172.17.0.1 - - [20/Jun/2021 20:23:16] "POST /create HTTP/1.1" 302 -
+2021-06-20 20:23:16,586 INFO app Thread-72 : From @app.route('/'): All artices displayed!
+2021-06-20 20:23:16,588 INFO werkzeug Thread-72 : 172.17.0.1 - - [20/Jun/2021 20:23:16] "GET / HTTP/1.1" 200 -
+2021-06-20 20:23:28,051 ERROR app Thread-74 : From @app.route('/<int:post_id>'): Artice with id: 45244 cannot be retrieved!
+2021-06-20 20:23:28,052 INFO werkzeug Thread-74 : 172.17.0.1 - - [20/Jun/2021 20:23:28] "GET /45244 HTTP/1.1" 404 -
+
+
+
+
+
+
+
+
+
+
+
+
+
