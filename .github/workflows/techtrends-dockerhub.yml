@@ -11,11 +11,12 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-        
 
+      # # Create execution environments for our containers
       - name: Set up QEMU 
         uses: docker/setup-qemu-action@v1
 
+      # # Interface to build image
       - name: Set up Docker buildx
         uses: docker/setup-buildx-action@v1
       
@@ -28,9 +29,8 @@ jobs:
       - name: Build and Push
         uses: docker/build-push-action@v2
         with:
-          context: ./project
-          repository: rkendev/nd064_course_1
-          dockerfile: ./techtrends/Dockerfile
+          context: ./techtrends
+          file: ./techtrends/Dockerfile
           plattforms: linux/amd64
           push: true
-          tags: techtrends:latest
+          tags: rkensdockhub/techtrends:latest
